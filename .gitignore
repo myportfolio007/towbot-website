@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Entire admin folder — contains sensitive credentials and database
+admin/
+
+# Logs
+*.log

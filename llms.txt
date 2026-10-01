@@ -1,0 +1,30 @@
+# Tow-botic Systems — Towbot
+
+## Company
+Tow-botic Systems is a marine-technology product company developing Towbot, a configurable family of detachable battery-electric manoeuvring units. The company operates from India and the Netherlands.
+
+## Product
+Towbot is a detachable battery-electric thruster platform for ship manoeuvring, barge positioning and temporary dynamic positioning. It attaches temporarily to a compatible vessel or floating asset using an application-specific hull interface, without permanent propulsion conversion.
+
+## Product Range
+- TB120: 120 kW class. Lead platform. Inland barges, pontoons and sheltered-water manoeuvring.
+- TB340: 340 kW class. Configurable platform. Work barges, marine construction and temporary positioning.
+- TB1400+: 1.4 MW+ class. Engineered to order. Heavy floating assets, high-thrust ship-assist and multi-unit port operations.
+
+## Applications
+- Ship manoeuvring: berthing, unberthing, lock transits and confined-port operations.
+- Barge positioning: portable propulsion and positioning for barges, pontoons and work platforms.
+- Portable dynamic positioning: temporary DP for marine construction, dredging, jack-up support and offshore campaigns.
+
+## Technology
+Hull attachment and load transfer, electric propulsion, battery-electric energy and charging, cameras and navigation sensors, authenticated communication, operator HMI with override and emergency stop.
+
+## Patents
+US Patent 10,604,218 B2 and UK Patent GB 2,568,328 B — remote-controllable underwater device and method for manoeuvring vessels. Inventors: Gary Vaz and Eric Holohan.
+
+## Contact
+Capt. Gary Vaz, Founder & CEO
+Email: gary@towboticsystems.com
+Telephone: +31 647 111 959
+Address: Poortland 66, 1046 BD Amsterdam, The Netherlands
+Website: https://www.towboticsystems.com/

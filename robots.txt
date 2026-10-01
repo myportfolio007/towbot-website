@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dist/contact/submit.php
+Disallow: /connect-mail.php
+Disallow: /submit.php
+
+Sitemap: https://www.towboticsystems.com/sitemap.xml
