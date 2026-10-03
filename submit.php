@@ -48,10 +48,6 @@ $submission = [
     'org_type'            => clean($_POST['org-type']            ?? ''),
     'application'         => clean($_POST['application']         ?? ''),
     'vessel_type'         => clean($_POST['vessel-type']         ?? ''),
-    'dimensions'          => clean($_POST['dimensions']          ?? ''),
-    'manoeuvre'           => clean($_POST['manoeuvre']           ?? ''),
-    'current_arrangement' => clean($_POST['current-arrangement'] ?? ''),
-    'project_date'        => clean($_POST['project-date']        ?? ''),
     'message'             => clean($_POST['message']             ?? ''),
 ];
 
