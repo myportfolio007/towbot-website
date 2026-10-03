@@ -82,7 +82,7 @@ p { margin: 0 0 20px; }
 .nav-links { display: flex; align-items: center; gap: 27px; color: #c9d7de; font-size: .87rem; font-weight: 700; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: white; }
 .nav-links a[aria-current="page"] { position: relative; }
-.nav-links a[aria-current="page"]::after { content: ""; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; border-radius: 2px; background: #44d7e8; animation: navUnderlineIn .4s cubic-bezier(.22,1,.36,1) forwards; box-shadow: 0 0 8px rgba(68,215,232,.7); }
+.nav-links a[aria-current="page"]::after { content: ""; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; border-radius: 2px; background: rgba(68,215,232,.45); animation: navUnderlineIn .4s cubic-bezier(.22,1,.36,1) forwards; box-shadow: 0 0 8px rgba(68,215,232,.35); }
 @keyframes navUnderlineIn { from { transform: scaleX(0); transform-origin: left; opacity: 0; } to { transform: scaleX(1); transform-origin: left; opacity: 1; } }
 .nav-toggle { display: none; border: 0; color: white; background: transparent; padding: 8px; cursor: pointer; }
 .nav-toggle span { display: block; width: 25px; height: 2px; margin: 5px 0; background: currentColor; transition: all .3s; }
