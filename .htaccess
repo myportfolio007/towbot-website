@@ -1,6 +1,9 @@
 Options -Indexes
 AddDefaultCharset UTF-8
 
+# Custom 404 page
+ErrorDocument 404 /404.html
+
 # Ensure PHP executes correctly
 <FilesMatch "\.php$">
     SetHandler application/x-httpd-php

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Tow-botic Systems</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="assets/images/towbotic-globe-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="shell">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="brand">
+        <img src="assets/images/towbotic-globe-logo.png" alt="" class="brand-logo" width="512" height="512">
+        <span>TOWBOT <small>by Tow-botic Systems</small></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="dist/product/product-range.html">Product range</a>
+        <a href="dist/applications/applications.html">Applications</a>
+        <a href="dist/technology/technology.html">Technology</a>
+        <a href="dist/company/company.html">Company</a>
+        <a href="dist/contact/contact.html">Contact</a>
+      </div>
+      <a href="dist/contact/contact.html" class="button small">Request assessment <span class="arrow">↗</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section dark" style="min-height:70vh;display:flex;align-items:center;">
+    <div class="shell" style="text-align:center;">
+      <p class="eyebrow">404</p>
+      <h1 style="font-size:clamp(2rem,5vw,4rem);margin-bottom:24px;">Page not found.</h1>
+      <p class="lead" style="max-width:560px;margin:0 auto 40px;">The page you are looking for has moved or does not exist. Try one of the links below.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+        <a href="index.html" class="button">Go to homepage <span class="arrow">↗</span></a>
+        <a href="dist/contact/contact.html" class="button secondary">Request an assessment</a>
+      </div>
+      <div style="margin-top:60px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:center;">
+        <a href="dist/product/product-range.html" style="color:#8ca5b2;font-size:.88rem;">Product range</a>
+        <a href="dist/applications/applications.html" style="color:#8ca5b2;font-size:.88rem;">Applications</a>
+        <a href="dist/technology/technology.html" style="color:#8ca5b2;font-size:.88rem;">Technology</a>
+        <a href="dist/company/company.html" style="color:#8ca5b2;font-size:.88rem;">Company</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/images/towbotic-globe-logo.png" alt="" class="brand-logo" width="512" height="512">
+          <span>TOWBOT <small>by Tow-botic Systems</small></span>
+        </a>
+        <p>Detachable electric thrust for ship manoeuvring, barge positioning and temporary dynamic positioning.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <a href="dist/product/product-range.html">Product range</a>
+        <a href="dist/technology/technology.html">Technology</a>
+        <a href="dist/company/company.html">Company</a>
+      </div>
+      <div class="footer-col">
+        <h3>Applications</h3>
+        <a href="dist/applications/ship-manoeuvring/ship-manoeuvring.html">Ship manoeuvring</a>
+        <a href="dist/applications/barge-positioning/barge-positioning.html">Barge positioning</a>
+        <a href="dist/applications/portable-dp/portable-dp.html">Portable DP</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:gary@towboticsystems.com">gary@towboticsystems.com</a>
+        <a href="tel:+31647111959">+31 647 111 959</a>
+        <a href="dist/contact/contact.html">Request an assessment</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Tow-botic Systems. All rights reserved.</span>
+      <span class="product-disclaimer">Configurations, performance and savings depend on application engineering, operating profile, validation, required approvals and contract scope.</span>
+      <a href="dist/privacy/privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var hdr = document.getElementById('siteHeader');
+window.addEventListener('scroll', function() { hdr.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+var toggle = document.getElementById('navToggle');
+var links = document.getElementById('navLinks');
+toggle.addEventListener('click', function() {
+  var open = links.classList.toggle('open');
+  toggle.classList.toggle('active', open);
+  toggle.setAttribute('aria-expanded', String(open));
+});
+document.querySelectorAll('[data-year]').forEach(function(el) { el.textContent = new Date().getFullYear(); });
+</script>
+</body>
+</html>
