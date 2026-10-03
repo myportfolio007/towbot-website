@@ -101,7 +101,7 @@ p { margin: 0 0 20px; }
 .button .arrow { font-size: 1.1em; }
 
 .hero {
-  position: relative; min-height: 1100px; display: flex; align-items: end; overflow: hidden;
+  position: relative; min-height: min(1100px, 100vh); display: flex; align-items: end; overflow: hidden;
   background: var(--ink) url('../assets/images/towbot-vessel-approach.webp') center/cover no-repeat; color: white;
 }
 .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,15,25,.98) 0%, rgba(3,15,25,.82) 38%, rgba(3,15,25,.18) 72%, rgba(3,15,25,.45) 100%), linear-gradient(0deg, rgba(3,15,25,.88), transparent 35%); }

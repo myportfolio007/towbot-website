@@ -7,6 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Set timezone
+date_default_timezone_set('Europe/Amsterdam');
+
 // Auto-detect base path so it works on any folder structure
 // e.g. public_html root → ""
 // e.g. public_html/gary veg → "/gary%20veg" (handled by browser encoding)
@@ -36,7 +39,7 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 // ── Build record ─────────────────────────────────────
 $submission = [
     'id'                  => uniqid('sub_', true),
-    'submitted_at'        => date('Y-m-d H:i:s'),
+    'submitted_at'        => date('Y-m-d h:i A'),
     'ip'                  => $_SERVER['REMOTE_ADDR'] ?? '',
     'name'                => $name,
     'company'             => $company,

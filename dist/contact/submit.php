@@ -5,6 +5,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Set timezone
+date_default_timezone_set('Europe/Amsterdam');
+
+// Set timezone
+date_default_timezone_set('Europe/Amsterdam');
+
 // ── Sanitize ─────────────────────────────────────────
 function clean(string $val): string {
     return htmlspecialchars(strip_tags(trim($val)), ENT_QUOTES, 'UTF-8');
@@ -29,7 +35,7 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 // ── Build record ─────────────────────────────────────
 $submission = [
     'id'                  => uniqid('sub_', true),
-    'submitted_at'        => date('Y-m-d H:i:s'),
+    'submitted_at'        => date('Y-m-d h:i A'),
     'ip'                  => $_SERVER['REMOTE_ADDR'] ?? '',
     'name'                => $name,
     'company'             => $company,
